@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-poppins: "Poppins", sans-serif;
+
+  /* Custom glow colors */
+  --color-brand-cyan: #06b6d4;
+  --color-brand-emerald: #10b981;
+}
+
+/* Base custom styles if needed */
+body {
+  font-family: var(--font-sans);
+  background-color: #0f0f11;
+  color: #f3f4f6;
+  overflow-x: hidden;
+}
+
+/* Custom glowing shadows */
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.15);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.2);
+}
+
+/* Custom scrollbars for elements */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 15, 17, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Hide scrollbar utility class */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+/* Base custom styles if needed */
+html {
+  overscroll-behavior: none; /* ← tambah ini */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0f0f11;
+  color: #f3f4f6;
+  overflow-x: hidden;
+  overscroll-behavior: none; /* ← tambah ini */
+}
+/* Hide scrollbar globally but keep scroll functionality */
+* {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE & Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari, Opera */
+} 

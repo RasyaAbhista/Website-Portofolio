@@ -1,0 +1,6 @@
+{
+  "name": "Loading Screen Portfolio Loader",
+  "description": "An interactive, highly polished chat-prompted portfolio loading terminal and animated entrance screen for Rasya Abhista Indrabaswara.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
